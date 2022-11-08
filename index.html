@@ -59,8 +59,18 @@
       <!--Hero-->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="service-button">Замовити послугу</button>
+        <button data-modal-open type="button" class="service-button">Замовити послугу</button>
       </section>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close" data-modal-close type="button">
+            <svg class="modal-close-button" width="20" height="20">
+              <use href="./images/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <!--Company advantages-->
       <section class="section">
@@ -76,8 +86,7 @@
               </div>
               <h3 class="advantage-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="advantage-text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="item">
@@ -88,8 +97,7 @@
               </div>
               <h3 class="advantage-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="advantage-text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="item">
@@ -111,8 +119,7 @@
               </div>
               <h3 class="advantage-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="advantage-text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -125,28 +132,37 @@
           <h2 class="team-title section-title">Чим ми займаємося</h2>
           <ul class="service-images list">
             <li class="item">
-              <img
-                src="./images/work_example_cod.jpg"
-                alt="Написання коду"
-                width="370"
-                height="300"
-              />
+              <div class="service-image">
+                <img
+                  src="./images/work_example_cod.jpg"
+                  alt="Десктопні додатки"
+                  width="370"
+                  height="300"
+                />
+                <p class="service-text">ДЕСКТОПНІ ДОДАТКИ</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/work_example_design.jpg"
-                alt="Розробка дизайну"
-                width="370"
-                height="300"
-              />
+              <div class="service-image">
+                <img
+                  src="./images/work_example_design.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  height="300"
+                />
+                <p class="service-text">МОБІЛЬНІ ДОДАТКИ</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/work_example_colour.jpg"
-                alt="Підбір палітри кольорів"
-                width="370"
-                height="300"
-              />
+              <div class="service-image">
+                <img
+                  src="./images/work_example_colour.jpg"
+                  alt="Дизайнерські рішення"
+                  width="370"
+                  height="300"
+                />
+                <p class="service-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -159,12 +175,7 @@
           <ul class="team-list list">
             <li class="team-member">
               <div class="member-card">
-                <img
-                  src="./images/photo_ihor.jpg"
-                  alt="Ігор Дем'яненко"
-                  width="270"
-                  height="260"
-                />
+                <img src="./images/photo_ihor.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
                 <div class="member-footer">
                   <h3 class="member-name">Ігор Дем'яненко</h3>
                   <p lang="en" class="member-role">Product Designer</p>
@@ -203,12 +214,7 @@
             </li>
             <li class="team-member">
               <div class="member-card">
-                <img
-                  src="./images/photo_olha.jpg"
-                  alt="Ольга Рєпіна"
-                  width="270"
-                  height="260"
-                />
+                <img src="./images/photo_olha.jpg" alt="Ольга Рєпіна" width="270" height="260" />
                 <div class="member-footer">
                   <h3 class="member-name">Ольга Рєпіна</h3>
                   <p lang="en" class="member-role">Frontend Developer</p>
@@ -397,8 +403,7 @@
           <li>
             <div>
               <a lang="en" href="./index.html" class="logo link"
-                ><span class="logo-web">Web</span
-                ><span class="logo-studio">Studio</span>
+                ><span class="logo-web">Web</span><span class="logo-studio">Studio</span>
               </a>
               <address>
                 <ul class="list">
@@ -412,14 +417,10 @@
                     >
                   </li>
                   <li>
-                    <a href="mailto:info@devstudio.com" class="contact link"
-                      >info@devstudio.com</a
-                    >
+                    <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
                   </li>
                   <li>
-                    <a href="tel:+380961111111" class="contact link"
-                      >+38 096 111 11 11</a
-                    >
+                    <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
                   </li>
                 </ul>
               </address>
@@ -464,5 +465,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
