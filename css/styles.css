@@ -9,6 +9,7 @@
   --eighth-color: #f5f4fa;
   --ninth-color: #188ce8;
   --tenth-color: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /** {
@@ -119,7 +120,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, color 250ms var(--timing-function);
 }
 
 .current {
@@ -148,7 +149,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, color 250ms var(--timing-function);
 }
 
 .contact-icon {
@@ -192,7 +193,7 @@ body {
   font-style: normal;
   padding-left: 0;
 
-  transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, color 250ms var(--timing-function);
 }
 
 .footer .contact,
@@ -255,7 +256,7 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-social-link:hover,
@@ -292,7 +293,7 @@ body {
   margin-right: auto;
   padding: 10px 32px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .service-button:focus,
@@ -325,7 +326,7 @@ body {
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -508,7 +509,7 @@ body {
   fill: var(--tenth-color);
   border-radius: 50%;
 
-  transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, fill 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -539,7 +540,7 @@ body {
   border-radius: 4px;
   fill: var(--tenth-color);
 
-  transition: border-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color, fill 250ms var(--timing-function);
 }
 
 .clients-link:hover,
@@ -581,7 +582,7 @@ body {
   border-radius: 4px;
   padding: 6px 22px;
 
-  transition: background-color, color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, color, box-shadow 250ms var(--timing-function);
 }
 
 .filter-button:hover,
@@ -630,7 +631,7 @@ body {
 }
 
 .project-card {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .project-card:hover {
@@ -657,7 +658,7 @@ body {
 
   transform: translateY(+150%);
 
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms var(--timing-function);
 }
 
 .project-card:hover .project-description {
