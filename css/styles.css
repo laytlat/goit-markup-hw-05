@@ -328,7 +328,7 @@ body {
 
   opacity: 1;
 
-  transition: opacity, visibility 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
